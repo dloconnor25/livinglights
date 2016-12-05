@@ -1,5 +1,5 @@
 
-$font-stack-header: 'Montserrat-Subrayada', sans-serif;
+$font-stack-header: 'Montserrat Subrayada', sans-serif;
 $font-stack-title: 'Oswald', sans-serif;
 $font-stack-body: 'Poppins', sans-serif;
 
@@ -10,14 +10,20 @@ $purple-dark: darken($purple, 10%);
 
 
 h1 {
-  font: $font-stack-header;
+  font-family: $font-stack-header;
+  font-size: 64px;
+  text-transform: uppercase;
 }
+
 h2 {
-  font: $font-stack-title;
+  font-family: $font-stack-title;
+  font-size: 36px;
+  text-transform: uppercase;
 }
 
 p {
-  font: $font-stack-body;
+  font-family: $font-stack-body;
+  font-size: 18px;
 }
 
 
@@ -26,18 +32,30 @@ header {
   width: 100%;
   height: 100px;
   background-color: black;
-  border-bottom: 5px solid white;
+  border-bottom: 2px solid white;
   margin: 0 auto;
 }
 
-// .hero {
-//   width: 100%;
-//   height: 250px;
-// }
+.hero {
+  background-color: black;
+  width: 100%;
+  height: 600px;
+  padding-top: 1%;
+}
+
+.hero h1 {
+  margin: 0;
+}
+video {
+  height: 500px;
+  width: 100%;
+}
 
 .animal_intro {
     height: 200px;
-    padding-top: 2%;
+    padding-top: 1%;
+    margin: 0 auto;
+    border-top: 2px solid white;
 }
 .animal_intro p {
   padding-left: 20%;
@@ -51,7 +69,7 @@ header {
 
 .mapBox {
   margin: 0;
-  border-bottom: 5px solid white;
+  border-bottom: 2px solid white;
 }
 
 .textInfo {
@@ -61,7 +79,7 @@ header {
   padding-right: 20%;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-bottom: 5px solid white;
+  border-bottom: 2px solid white;
 }
 
 h1, h2, h3, p {
@@ -159,8 +177,8 @@ li.active a, a:hover, a:active {
   padding: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  width: 500px;
-  height: 400px;
+  width: 300px;
+  height: 640px;
   color: white;
   z-index: 1;
   transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
