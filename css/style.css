@@ -8,6 +8,42 @@ h2 {
 p {
   font: "Poppins", sans-serif; }
 
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  border-bottom: 5px solid white;
+  margin: 0 auto; }
+
+.animal_intro {
+  height: 200px;
+  padding-top: 2%; }
+
+.animal_intro p {
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.animal_intro, .mapBox, .textInfo {
+  width: 100%;
+  background-color: black; }
+
+.mapBox {
+  margin: 0;
+  border-bottom: 5px solid white; }
+
+.textInfo {
+  height: auto;
+  margin: 0 auto;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 5px solid white; }
+
+h1, h2, h3, p {
+  color: white;
+  text-align: center; }
+
 div, img {
   position: relative;
   box-sizing: border-box; }
@@ -51,13 +87,17 @@ li.active a, a:hover, a:active {
   margin: 0 auto; }
 
 .distribution-map .backgroundmap img {
-  width: 50%;
+  width: 100%;
   position: relative;
   margin: 0;
   padding: 0; }
 
+.distribution-map .map-point iframe {
+  width: 80%;
+  height: auto; }
+
 .distribution-map .map-point img {
-  width: 70%;
+  width: 80%;
   height: auto; }
 
 .distribution-map .map-point {
@@ -72,8 +112,8 @@ li.active a, a:hover, a:active {
   opacity: 0.8;
   transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border: 4px solid #E80090;
-  background-color: #9c025a; }
+  border: 4px solid #460049;
+  background-color: rgba(70, 0, 73, 0.75); }
 
 .distribution-map .map-point .content {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -95,8 +135,8 @@ li.active a, a:hover, a:active {
   padding: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  width: 420px;
-  height: 320px;
+  width: 500px;
+  height: 400px;
   color: white;
   z-index: 1;
   transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
@@ -115,6 +155,11 @@ li.active a, a:hover, a:active {
   display: inline-block; }
 
 .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
-  color: #white; }
+  color: #black; }
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: black; }
 
 /*# sourceMappingURL=style.css.map */
