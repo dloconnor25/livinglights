@@ -33,14 +33,17 @@ video {
   height: 850px;
   position: absolute;
   object-position: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%); }
 
-.vid h1 {
+.hero h1 {
   overflow: hidden;
   z-index: 100;
-  padding-top: 10%;
-  padding-left: 31%;
-  position: absolute; }
+  position: absolute;
+  padding-left: 30%;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .animal_intro {
   height: 200px;
@@ -76,6 +79,9 @@ h1, h2, h3, p {
 div, img {
   position: relative;
   box-sizing: border-box; }
+
+body {
+  background-color: black; }
 
 body {
   margin: 150px, 0, 0, 0; }
@@ -165,7 +171,7 @@ li.active a, a:hover, a:active {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   width: 300px;
-  height: 640px;
+  height: 600px;
   color: white;
   z-index: 1;
   transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
@@ -190,5 +196,26 @@ footer {
   height: 100px;
   width: 100%;
   background-color: black; }
+
+@media (max-width: 767px) {
+  .animal_intro {
+    height: auto;
+    margin: 0 auto; }
+
+  .hero h1 {
+    font-size: 50px;
+    z-index: 100;
+    padding-left: 5%; }
+
+  .hero {
+    height: 200px;
+    text-align: center; }
+
+  video {
+    height: 500px;
+    object-fit: cover; }
+
+  .hide {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
